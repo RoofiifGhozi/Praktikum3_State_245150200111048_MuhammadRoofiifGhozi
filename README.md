@@ -1,4 +1,4 @@
-# Praktikum 3 - Konsep State dan Rekomposisi
+# Praktikum 3 Konsep State dan Rekomposisi
 
 Aplikasi ini dibuat untuk memenuhi tugas praktikum bab 3 mengenai konsep state dan rekomposisi pada Jetpack Compose. Terdapat tiga fitur utama yang dibuat yaitu aplikasi counter, toggle warna box, dan profil interaktif.
 
