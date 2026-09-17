@@ -15,8 +15,4 @@ Aplikasi ini dibuat untuk memenuhi tugas praktikum bab 3 mengenai konsep state d
 
 ## Analisis Compose Dibandingkan XML Tradisional
 
-Penggunaan Jetpack Compose jauh lebih sederhana dibandingkan XML tradisional untuk kasus penanganan state dan UI interaktif:
-
-- **Cara Kerja Deklaratif**: Pada Compose, kita hanya perlu mendefinisikan bentuk tampilan berdasarkan data state saat ini. Ketika data berubah, Compose akan otomatis memperbarui bagian UI yang relevan (recomposition). Berbeda dengan XML imperatif yang mengharuskan kita mencari ID elemen menggunakan findViewById atau ViewBinding lalu mengubah kodenya satu-per-satu secara manual.
-- **Kode Lebih Ringkas dan Aman**: Seluruh kode UI dan logika dibuat langsung menggunakan bahasa Kotlin murni tanpa perlu file XML terpisah. Hal ini mengurangi jumlah baris kode dan mencegah terjadinya kesalahan data UI yang tidak cocok (state mismatch) ataupun error variabel kosong (null pointer).
-- **Komponen Lebih Modular**: Penerapan state hoisting pada Compose membuat komponen seperti tombol dapat dipisah menjadi komponen independen (stateless), sehingga mudah digunakan kembali di halaman mana pun tanpa terikat pada data internal.
+Penggunaan Jetpack Compose jauh lebih sederhana dibandingkan XML tradisional untuk kasus penanganan state. Pada XML imperatif, kita harus menghubungkan ID elemen menggunakan ViewBinding atau findViewById dan mengubah properti tampilan secara manual melalui kode. Sedangkan pada Compose yang bersifat deklaratif, UI akan otomatis memperbarui tampilannya begitu nilai state berubah. Hal ini membuat penulisan kode menjadi lebih ringkas, mengurangi risiko kesalahan data UI yang tidak sinkron, serta memudahkan pemisahan logika komponen agar dapat digunakan kembali.
