@@ -4,7 +4,14 @@ Aplikasi ini dibuat untuk memenuhi tugas praktikum bab 3 mengenai konsep state d
 
 ## Implementasi State di Aplikasi
 
-Pengelolaan data UI pada aplikasi ini memanfaatkan variabel state yang disimpan menggunakan remember dan mutableStateOf. Pada fitur counter, variabel state digunakan untuk menyimpan nilai angka yang otomatis bertambah atau berkurang saat tombol diklik. Pada fitur toggle warna box, state boolean digunakan untuk mengubah warna latar belakang box antara merah dan hijau ketika area box disentuh. Sementara pada fitur profil, state digunakan untuk mengatur status tombol follow sekaligus mengubah teks indikator di bawahnya secara bersamaan melalui penerapan state hoisting.
+1. **Aplikasi Counter**  
+   Pengelolaan angka menggunakan variabel state count yang dideklarasikan dengan remember { mutableStateOf(0) }. Setiap kali tombol Tambah atau Kurang diklik, nilai variabel diperbarui sehingga Compose otomatis memperbarui teks angka di layar.
+
+2. **Toggle Warna Box**  
+   Pengaturan warna box menggunakan state boolean isRed dengan remember { mutableStateOf(true) }. Saat area box diklik, nilai isRed di-toggle yang secara otomatis mengubah warna latar belakang box antara merah dan hijau.
+
+3. **Profil Interaktif**  
+   Penerapan state hoisting dilakukan pada tombol Follow, di mana variabel state isFollowed disimpan pada komponen induk (ProfileTab) dan dikirim ke komponen tombol melalui parameter. Hal ini memungkinkan pembaruan tombol dan teks indikator status pengikutan di bawahnya terjadi secara bersamaan.
 
 ## Analisis Compose Dibandingkan XML Tradisional
 
